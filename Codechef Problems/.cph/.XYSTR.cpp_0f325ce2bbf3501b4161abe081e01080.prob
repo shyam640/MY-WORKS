@@ -1,0 +1,1 @@
+{"name":"Local: XYSTR","url":"f:\\MY WORKS\\Codechef Problems\\XYSTR.cpp","tests":[{"id":1606041385687,"input":"3\nxy\nxyxxy\nyy","output":"1\n2\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\MY WORKS\\Codechef Problems\\XYSTR.cpp","group":"local","local":true}

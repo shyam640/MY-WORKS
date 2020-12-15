@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head><h1 style="font-size: 50px ; margin: 150px ;">welcome to login page</h1>
+   <title>Login.in</title>
+   <link rel="stylesheet" href="F:\MY WORKS\1(a).css">
+   <meta name="viewport" content="width=device-width , initial scale=1">
+</head>
+<body>
+   <div style="size: 50px;">
+      <button id="#home" ><i class="fas fa-home"></i>Home</button>
+      <button id="#news"><i class="fas fa-newspaper"></i>News</button>
+      <button id="#live"><i class="fas fa-video"></i>Live Tests</button>
+      <button id="#notice"><i class="fas fa-bell"></i>Notices</button>
+      <button id="#about"><i class="fas fa-address-card"></i>About</button>
+     <h2><i class="fas fa-bars"></i></h2>
+   </div>
+<form method="post" target="_blank">
+   <div class="log_form">
+         <legend><h1><strong>Login form:</strong></h1></legend>
+         <label id="username"><b>Username:</b></label>
+         <input type="email" name="username" id="user"><br>
+         <label id="password"><b>Password:</b></label>
+         <input type="password" name="password" id="pass" required minlength="8"><br>
+          
+        <p style="size: 50px;"><input type="checkbox" required ><b>reCAPTCHA</b></p><br>
+         <button type="submit" target="_blank" onclick="alert_msg()" >Submit</button>
+         <button type="reset" target="_self">Reset</button>
+   </div>
+</form>
+
+</body>
+<script>
+   function alert_msg(){
+      alert("Remember Password").display;
+   }
+  
+  
+</script>
+</html>

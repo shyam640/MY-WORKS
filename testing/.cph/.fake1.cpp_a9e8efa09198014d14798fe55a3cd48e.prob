@@ -1,0 +1,1 @@
+{"name":"Local: fake1","url":"f:\\MY WORKS\\testing\\fake1.cpp","tests":[{"id":1606059273267,"input":"5\n1000000001 1000000002 1000000003 1000000004 1000000005","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\MY WORKS\\testing\\fake1.cpp","group":"local","local":true}

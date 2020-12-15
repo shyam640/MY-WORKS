@@ -1,0 +1,56 @@
+
+body {
+     background-size: 100%;
+     
+     
+     }
+textarea{
+     background-color: rgb(5, 6, 7) ;
+     opacity: 80%;
+     border:3px ;
+     text-align: left;
+     color:white;
+     margin: inherit;
+
+     
+  }
+
+.menu_bar{
+     size: 35px;
+     text-align: left ;
+  }
+h2.slide{
+        color: rgb(4, 8, 12);
+  }
+.header{
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 18px;
+     text-align:right;
+     margin: initial;
+     border: -20px;
+}
+
+    
+
+a :link{
+     color: blue;
+}
+a :hover{
+     color:rgb(233, 27, 27);
+     text-decoration: underline;
+
+}
+a :visited{
+     color:cyan;
+}
+#search{
+     color:green ;
+}
+   
+   
+      
+   
+
+      
+    
+  

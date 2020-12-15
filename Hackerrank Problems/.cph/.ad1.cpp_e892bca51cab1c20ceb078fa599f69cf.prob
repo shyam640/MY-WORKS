@@ -1,0 +1,1 @@
+{"name":"Local: ad1","url":"f:\\MY WORKS\\Hackerrank Problems\\ad1.cpp","tests":[{"id":1604594261167,"input":"15","output":"1     \n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\MY WORKS\\Hackerrank Problems\\ad1.cpp","group":"local","local":true}

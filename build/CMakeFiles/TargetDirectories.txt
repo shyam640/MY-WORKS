@@ -1,0 +1,3 @@
+F:/MY WORKS/build/CMakeFiles/MY_WORKS.dir
+F:/MY WORKS/build/CMakeFiles/edit_cache.dir
+F:/MY WORKS/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+{"name":"Local: contest1","url":"f:\\MY WORKS\\Codechef Problems\\contest1.cpp","tests":[{"id":1604732837723,"input":"2\n3\n40 30 50\n2 4 20\n1\n0\n10","output":"800\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\MY WORKS\\Codechef Problems\\contest1.cpp","group":"local","local":true}

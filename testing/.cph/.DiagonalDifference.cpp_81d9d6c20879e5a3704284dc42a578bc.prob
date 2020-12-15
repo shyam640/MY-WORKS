@@ -1,0 +1,1 @@
+{"name":"Local: DiagonalDifference","url":"f:\\MY WORKS\\testing\\DiagonalDifference.cpp","tests":[{"id":1607926222151,"input":"3\n11 2 4\n4 5 6\n10 8 -12","output":"15"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\MY WORKS\\testing\\DiagonalDifference.cpp","group":"local","local":true}
