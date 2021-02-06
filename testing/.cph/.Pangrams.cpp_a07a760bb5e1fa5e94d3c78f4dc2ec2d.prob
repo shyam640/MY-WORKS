@@ -1,0 +1,1 @@
+{"name":"Local: Pangrams","url":"f:\\MY WORKS\\testing\\Pangrams.cpp","tests":[{"id":1609421246370,"input":"2\nqwqqwqeqqwdsdadsdasadsfsdsdsdasasas\n4\nqwqqwqeqqwdsdadsdasadsfsdsdsdasasas\n24\n\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\MY WORKS\\testing\\Pangrams.cpp","group":"local","local":true}

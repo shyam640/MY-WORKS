@@ -1,0 +1,58 @@
+body{
+   background-image: url(lpu-background.jpg);
+   background-repeat: repeat-y;
+   background-color: black;
+   background-size: 100% 600% !important;
+   
+   
+}
+
+.logo:hover{
+   /* Going to add animation something like zoom */
+   color: chartreuse;
+}
+
+.logo{
+   image-orientation: flip infinite;
+   display: inline;
+   
+}
+
+.top-header{
+   backdrop-filter: blur(20px);
+   
+}
+
+
+
+#tagline1{
+   position: absolute;
+   top: 10px;left: 140px;
+   
+}
+#tagline2{
+   position: absolute;
+   top: 34px;left: 140px;
+}
+
+label{
+   position: absolute;
+   top: 10px;right: 210px;
+   font-size: 30px;
+}
+
+.login-type{
+   position: absolute;
+   top: 10px;right: 90px;
+   padding: 10px;
+   font-size: 20px;
+   background-color: rgb(197, 166, 197);
+}
+
+.login-method{
+   border: 2px solid black;
+}
+
+.container1{
+   -webkit-animation-direction: reverse;
+}

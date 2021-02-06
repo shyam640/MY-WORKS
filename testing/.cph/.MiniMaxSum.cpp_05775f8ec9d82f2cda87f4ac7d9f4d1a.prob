@@ -1,0 +1,1 @@
+{"name":"Local: MiniMaxSum","url":"f:\\MY WORKS\\testing\\MiniMaxSum.cpp","tests":[{"id":1608527279994,"input":"793810624 895642170 685903712 623789054 468592370","output":"2572095760 2999145560"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\MY WORKS\\testing\\MiniMaxSum.cpp","group":"local","local":true}

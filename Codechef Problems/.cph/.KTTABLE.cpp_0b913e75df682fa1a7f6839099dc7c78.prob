@@ -1,0 +1,1 @@
+{"name":"Local: KTTABLE","url":"f:\\MY WORKS\\Codechef Problems\\KTTABLE.cpp","tests":[{"id":1608907828971,"input":"3\n3\n1 10 15\n1 10 3\n3\n10 20 30\n15 5 20\n5\n1 9 16 20 26\n1 5 8 6 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\MY WORKS\\Codechef Problems\\KTTABLE.cpp","group":"local","local":true}

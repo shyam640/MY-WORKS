@@ -1,0 +1,267 @@
+body{
+   background-color: rgb(0, 0, 0);
+   color: aliceblue;
+   min-height: 100vh;
+   overflow: hidden;
+   
+   
+}
+
+
+
+
+link{
+   display: none;
+   text-decoration: none;
+}
+
+.container{
+   margin: 200px 200px 200px 600px;
+   z-index: -1;
+}
+
+.container{
+   overscroll-behavior-x: fixed;
+   border: 3px solid rgb(245, 247, 248);
+   width:300px; height:300px;
+   background-position-x: center !important;
+   display: flex;justify-content: center;
+   align-items: center;flex-direction: column;
+   color: #fff;font-size: 32px;
+   border-radius: 50%;
+   opacity: 0.3;
+   background: rgba(61, 62, 66, 0.5);
+   box-shadow: 10px 0px 6px 12px rgba(15, 174, 236, 0.911),8px,0,0,12px rgba(23, 209, 223, 0.61) inset;
+}
+
+.blink-colon{
+   animation: blink 1s infinite;
+}
+
+@keyframes blink{
+   0%, 100%{opacity: 1;}
+   30%{opacity: 0.4;}
+}
+
+.date-container{
+   margin-top: 6px;
+   font-size: 16px;
+   color: rgba(255,255,255,0.8);
+}
+
+@media only screen and(max-width:768px){
+   [class=container]{
+      width: 100%;
+   }
+}
+
+
+.logo{
+   border-radius: 100%;
+   height: 75px;width: 75px;
+   
+   box-shadow:2px white;
+   -webkit-box-reflect: below 2px linear-gradient(transparent,transparent,rgba(0,0,0,0.5));
+   
+}
+
+#bar{
+   position: absolute;
+   top: 10px;right: 10px;
+   color: white;
+   z-index: 2;
+}
+
+.hamburger{
+   position: absolute;
+   top: 20px;right: 20px;
+   place-items: center;
+   background-color: rgb(16, 17, 16);
+}
+
+.hamburger .line{
+   display:grid;
+   width: 35px;height: 4px;
+   background-color: rgb(253, 252, 252);
+   transition: all 0.3s;
+   
+}
+
+.hamburger .line2{
+   transform: translateY(-3px);
+   background-color: rgb(12, 12, 12);
+}
+
+.hamburger .line3{
+   transform: translateY(3px);
+   background-color: rgb(17, 17, 17);
+}
+
+.hamburger .line4{
+   transform: translateY(-3px);
+   background-color: rgb(252, 247, 247);
+   
+}
+
+.hamburger .line5{
+   transform: translateY(-3px);
+   background-color: rgb(12, 12, 12);
+}
+
+.hamburger .line6{
+   transform: translateY(-3px);
+   background-color: rgb(247, 243, 243);
+}
+
+.nav{
+   z-index: 1;
+   width: 100%;height: 100%;
+   position: absolute;
+   background-color: rgb(27, 27, 27);
+   top: 0px;right: 0px;
+   clip-path: polygon(45% 10%, 100% 0, 100% 100%, 70% 100%);
+   transform: translateX(100%);
+   transition: all 0.3s;
+}
+
+.nav-list{
+   position: absolute;
+   right: 15%;top: 50%;
+   transform: translateY(-50%);
+   list-style: none;
+}
+
+.nav-list li{
+   transform: translateX(50px);
+   opacity: 0;
+   transition: all 0.3s;
+}
+
+.nav-list li:not(:last-child){
+   margin-bottom: 30px;
+}
+
+.nav-list li a{
+   text-decoration: none;
+   font-size: 30px;
+   color: #eee;
+   position: relative;
+   padding: 0px;
+}
+
+.nav-list li a::after{
+   content: '';
+   position: absolute;
+   width: 0px;height: 2px;
+   background-color: rgb(248, 125, 125);
+   bottom: -5px;left: 0;
+   transition: all 0.5s;
+}
+
+.nav-list li a:hover::after{
+   width: 100%;
+}
+
+.hamburger.clicked .line{
+   background-color: rgb(255, 252, 252);
+}
+
+.hamburger.clicked .line1{
+   transform: translateY(3px) rotate(-135deg);
+}
+
+.hamburger.clicked .line2{
+   opacity: 1;
+}
+
+.hamburger.clicked .line3{
+   transform: translateY(-3px) rotate(135deg);
+}
+.hamburger.clicked .line4{
+   transform: translateY(3px) rotate(-135deg);
+}
+.hamburger.clicked .line5{
+   transform: translateY(-3px) rotate(135deg);
+}
+.hamburger.clicked .line6{
+   transform: translateY(3px) rotate(-135deg);
+}
+
+.nav.show{
+   transform: translate(0);
+
+}
+
+.nav.show .nav-list li{
+   transform: translate(0);
+   opacity: 1;
+   transition-delay: 0.3s;
+
+}
+
+
+
+
+.sometext{
+   position: relative;
+}
+
+
+
+.main{
+   width: auto;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: black;
+}
+.l-s{
+   position: absolute;
+   top: 40px;
+   right: 70px;
+
+}
+.btn{
+   padding: 7px;
+   margin: 5px;
+   width: auto;
+   height: 100%;
+   font-size: 1.3rem;
+   text-decoration: none;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: 700;
+   cursor: pointer;
+   border: none;
+   border-radius: 5px;
+   position: relative;
+   
+   text-decoration: white;
+   z-index: 0;
+   border: 1px solid #ffffff;
+   background: black;
+   overflow: hidden;
+   box-shadow: #eee 0px 2px 4px 0px;
+   
+   
+}
+
+
+.btn:hover::before{
+   top: 0px;
+   border-radius: 0px;
+   text-decoration: none;
+}
+.btn::before{
+   content:'';
+   position: absolute;
+   top: 60px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background: #03f817;
+   border-radius: 50% 50% 0 0;
+   z-index: -1;
+   transition: all 0.5s;
+}
+

@@ -1,0 +1,462 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+html{
+   box-sizing: border-box;
+}
+*,*::before,*::after{
+   box-sizing: inherit;
+}
+
+html{
+   -ms-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+body{
+   background-color: rgb(127, 138, 143);
+   color: black;
+   z-index: -1;
+   font-family: sans-serif;
+  
+}
+.dark-mode{
+   background-color: rgb(34, 33, 33);
+   color: white;
+   
+}
+#toggle{
+   height: 35px;width: 50px;
+   margin: 0;padding: 0;
+   z-index: 5;
+   color:inherit;
+   display: block;
+   position: absolute;
+   top: 22px;right: 18px;
+   background-color: transparent;
+}
+
+
+.logo-design{
+   display: block;
+   height: 150px;width: 150px;
+   border-radius: 50%;
+   transition: linear;
+   margin: 0;
+   animation: logo-anim 3s infinite ease-in-out;
+   box-shadow: 0px 10px 8px red,5px 0px 3px green, 10px 0px 6px blue;
+}
+@keyframes logo-anim{
+   0% {box-shadow:0px 0px 0px red,0px 0px 0px green, 0px 0px 0px blue;}
+   30% {box-shadow: 0px 4px 2px red,1px 0px 0.5px green, 3px 0px 2px blue;}
+   70% {box-shadow: 0px 7px 4px red,3px 0px 1.5px green, 6px 0px 4px blue;}
+   100% {box-shadow: 0px 10px 8px red,5px 0px 3px green, 10px 0px 6px blue;}
+}
+
+@-webkit-keyframes logo-anim{
+   0% {box-shadow:0px 0px 0px red,0px 0px 0px green, 0px 0px 0px blue;}
+   30% {box-shadow: 0px 4px 2px red,1px 0px 0.5px green, 3px 0px 2px blue;}
+   70% {box-shadow: 0px 7px 4px red,3px 0px 1.5px green, 6px 0px 4px blue;}
+   100% {box-shadow: 0px 10px 8px red,5px 0px 3px green, 10px 0px 6px blue;}
+}
+
+.logo-letter{
+   transform: translate(-50%,-50%);
+   top: 80px;
+   left: 260px;
+   display: block;
+   position: absolute;
+   max-width: 100px;
+   color: rgb(0, 231, 247);
+   
+}
+.logo-letter:hover{
+   animation: letter 3s infinite;
+   border-bottom: 4px solid rgb(255, 166, 0);
+   
+}
+
+@keyframes letter{
+   0% {top: 80px;color: rgba(0, 0, 255, 0.932);}
+   40% {top: 40px;color: rgba(0, 0, 255, 0.603);}
+   70% {top: 60px;color: rgba(0, 0, 255, 0.699);}
+   100% {top: 80px;color: rgba(0, 16, 235, 0.897);}
+}
+
+.tagline{
+   position: absolute;
+   top: 100px;left: 400px;
+   
+}
+
+
+.Creativity{
+   animation: creativity 0.3s infinite ease-in-out;
+   
+}
+@keyframes creativity{
+   0% {top: 30px;opacity: 0.2;color: rgba(0, 0, 255, 0.459);}
+   50% {top: 60px;opacity: 0.6;color: rgba(0, 0, 255, 0.795);}
+   100% {top: 100px;opacity: 1;color: blue;}
+}
+
+.arises{
+   animation: arises 0.6s infinite ease-in-out;
+   
+}
+@keyframes arises{
+   0% {top: 30px;opacity: 0.2;color: rgba(0, 0, 255, 0.459);}
+   50% {top: 60px;opacity: 0.6;color: rgba(0, 0, 255, 0.795);}
+   100% {top: 100px;opacity: 1;color: blue;}
+}
+
+.from{
+   animation: from 0.9s infinite ease-in-out;
+   
+}
+@keyframes from{
+   0% {top: 30px;opacity: 0.2;color: rgba(255, 11, 2, 0.527);}
+   50% {top: 60px;opacity: 0.6;color: rgba(255, 0, 0, 0.815);}
+   100% {top: 100px;opacity: 1;color: red;}
+}
+.relativity{
+   animation: relativity 1.2s infinite ease-in-out;
+   
+}
+@keyframes relativity{
+   0% {top: 30px;opacity: 0.2;color: rgba(255, 11, 2, 0.527);}
+   50% {top: 60px;opacity: 0.6;color: rgba(255, 0, 0, 0.815);}
+   100% {top: 100px;opacity: 1;color: red;}
+}
+
+.if {
+   animation: anim3 1.5s infinite ease-in-out;
+}
+.you {
+   animation: anim3 1.8s infinite ease-in-out;
+}
+.could {
+   animation: anim3 2.1s infinite ease-in-out;
+}
+
+@keyframes anim3{
+   0% {top: 30px;opacity: 0.2;color: rgba(2, 27, 255, 0.527);}
+   50% {top: 60px;opacity: 0.6;color: rgba(38, 0, 255, 0.815);}
+   100% {top: 100px;opacity: 1;color: rgb(25, 0, 255);}
+}
+
+.relate {
+   animation: anim4 2.4s infinite ease-in-out;
+}
+.everything {
+   animation: anim4 2.7s infinite ease-in-out;
+}
+
+@keyframes anim4{
+   0% {top: 30px;opacity: 0.2;color: rgba(255, 10, 2, 0.527);}
+   50% {top: 60px;opacity: 0.6;color: rgba(255, 30, 0, 0.815);}
+   100% {top: 100px;opacity: 1;color: rgb(255, 30, 0);}
+}
+
+
+.you-2 {
+   animation: anim5 3.0s infinite ease-in-out;
+}
+.can {
+   animation: anim5 3.3s infinite ease-in-out;
+}
+.create {
+   animation: anim5 3.6s infinite ease-in-out;
+}
+.anything{
+   animation: anim5 3.9s infinite ease-in-out;
+}
+
+@keyframes anim5{
+   0% {top: 30px;opacity: 0.2;color: rgba(2, 69, 255, 0.527);}
+   50% {top: 60px;opacity: 0.6;color: rgba(25, 0, 255, 0.815);}
+   100% {top: 100px;opacity: 1;color: rgb(25, 0, 255);}
+}
+
+
+.nav-bar{
+   background-color: rgb(204, 147, 23);
+   box-shadow: 3px 5px 6px 10px burlywood;
+   position: relative;
+   top: 0;left: 0;
+}
+
+.nav{
+   width: 200px;
+   margin-left: 45px;
+   padding: 10px;
+   cursor: pointer;
+   
+}
+
+.box1 {
+   width: 50%;
+   height:500px;
+   position: relative;
+   top: 250px;left: 400px;
+   margin-left: 10px;
+   transform: translate(-50%,-50%);
+   cursor: pointer;
+}
+
+
+.left{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.front{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: #414141;
+   transform: perspective(800px);
+   backface-visibility: hidden;
+   transition: all 1s;
+   overflow: hidden;
+}
+
+.box1:hover .front{
+   transform: rotateX(180deg);
+}
+
+.front::before{
+   content: '';
+   position: absolute;
+   bottom: -25px;
+   border-radius: 50%;
+   background-color: #f05454;
+   width: 50px;
+   height: 50px;
+}
+
+.back{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: #f05454;
+   transform: perspective(800px) rotateY(0deg);
+   backface-visibility: hidden;
+   transition: all 0.5s;
+   flex-direction: column;
+   transform: rotateX(180deg);
+
+}
+.box1:hover .back{
+   transform: rotateX(0deg);
+}
+.box1 p{
+   margin: 10px 30px;
+}
+
+/* You can add here styles for education text*/
+
+
+
+
+
+
+
+.box2{
+   width: 50%;
+   height:500px;
+   position: relative;
+   top: 250px;left: 1100px;
+   margin-right: 10px;
+   transform: translate(-50%,-50%);
+   cursor: pointer;
+}
+.right{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.box2:hover .front{
+   transform: rotateX(180deg);
+}
+
+.box2:hover .back{
+   transform: rotateX(0deg);
+}
+.box2 p{
+   margin: 10px 30px;
+}
+
+.box3 {
+   width: 50%;
+   height:500px;
+   position: relative;
+   top: 250px;left: 400px;
+   margin-left: 10px;
+   transform: translate(-50%,-50%);
+   cursor: pointer;
+}
+
+.bottom-left{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.box3:hover .front{
+   transform: rotateX(180deg);
+}
+
+.box3:hover .back{
+   transform: rotateX(0deg);
+}
+.box3 p{
+   margin: 10px 30px;
+}
+
+.box4 {
+   width: 50%;
+   height:500px;
+   position: relative;
+   top: 250px;left: 1100px;
+   margin-right: 10px;
+   transform: translate(-50%,-50%);
+   cursor: pointer;
+}
+
+.bottom-right{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.box4:hover .front{
+   transform: rotateX(180deg);
+}
+
+.box4:hover .back{
+   transform: rotateX(0deg);
+}
+
+.box4 p{
+   margin: 10px 30px;
+}
+
+h1{
+   color: greenyellow;
+}
+h4{
+   color: #fc6a16;
+}
+p{
+   color: rgb(19, 233, 248);
+}
+
+.btn,.btn::before,.btn .fab{
+   transition: all 1s;
+   transition-timing-function: cubic-bezier(0.31,-0.105,0.43,1.59);
+}
+i{
+   color: #fff;
+}
+.btn::before{
+   top: 90%;
+   left: -10%;
+}
+.btn .fab{
+   transform: scale(0.8);
+}
+.btn.instagram::before{
+   background-color: #ec3646;
+}
+
+.btn.linkedin::before{
+   background-color: #24b3bd;
+}
+.btn.facebook::before{
+   background-color: rgb(56,56,241);
+}
+.btn.github::before{
+   background-color: #1b1616;
+}
+
+.btn:focus::before,.btn:hover::before{
+   top: -10%;
+   left: -10%;
+}
+.btn:focus .fab,.btn:hover .fab{
+   color: rgb(7, 250, 59);
+   transform: scale(1);
+}
+.social{
+   height: 90px;
+   margin: auto;
+   font-size: 0;
+   text-align: center;
+   position: absolute;
+   bottom: -1800px;right: 0;left: 0;
+}
+.social .btn .fab{
+   font-size: 50px;
+   vertical-align: middle;
+}
+.social .btn{
+   display: inline-block;
+   width: 90px;height: 90px;
+   line-height: 90px;
+   margin: 0 10px;
+   text-align: center;
+   position: relative;
+   overflow: hidden;
+   box-shadow: 12px 5px 20px 0px #000000;
+   opacity: 0.99;
+}
+.social .btn::before{
+   content: '';
+   width: 120%;
+   height: 5%;
+   position: absolute;
+   margin: 5px;
+}
+.footer{
+   justify-content: flex-start;
+   position: absolute;
+   left: 45%;
+}
+.foot{
+   padding: 5px;
+}
+
+/*  For Loader  ooOOoo like this
+
+/* .loader{
+   position: absolute;
+   top: 50%;left: 50%;
+   transform: translate(-50%,-50%);
+}
+ 
+.loader .dots{
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   margin: 10px;
+   display: inline-block;
+   background-color: rgb(65, 241, 30);
+   transform: scale(0.2);
+   animation: loaderanim 1.2s 2;
+   
+}
+
+.dots:nth-child(2){animation-delay: 0.2s;}
+.dots:nth-child(3){animation-delay: 0.4s;}
+.dots:nth-child(4){animation-delay: 0.8s;}
+.dots:nth-child(5){animation-delay: 1s;}
+.dots:nth-child(6){animation-delay: 1.2s;}
+
+@keyframes loaderanim{
+   0%,100% {transform: scale(0.2);}
+   50% {transform: scale(1);}
+} */
+
+

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void Swap(int a, int b)
+void Swap(int &a, int &b)
 {
    int temp = a;
    a = b;
@@ -41,7 +41,7 @@ void InsertionSort(int arr[], int size)
       while (current < arr[j] && j >= 0)
       {
          arr[j + 1] = arr[j];
-         j--
+         j--;
       }
       arr[j + 1] = current;
    }
@@ -78,26 +78,28 @@ void MergeSort(int arr[],int size)
 {
 
 }
+
 int main()
 {
    system("CLS");
    int n; //size of array
    cout << "Enter size of array : ";
    cin >> n;
+   cout<<endl;
    int arr[n];
    cout << "Enter array of size " << n << " : ";
    for (int i = 0; i < n; i++)
    {
       cin >> arr[i];
    }
-   cout << endl;
+   cout << endl<<endl;
    cout << "Array Before Sorting is :" << endl;
    for (int i = 0; i < n; i++)
    {
       cout << arr[i] << " ";
    }
 
-   cout << endl;
+   cout << endl<<endl;
    cout << "===========Enter Sorting Technique to be used============" << endl;
    cout << "1. Selection Sort" << endl;
    cout << "2. Insertion Sort" << endl;
@@ -113,7 +115,8 @@ int main()
    int option;
    cout << "Choose a option from 1-10 : ";
    cin >> option;
-   cout << endl;
+   cout << endl<<endl;
+
    switch (option)
    {
    case 1:
@@ -137,6 +140,7 @@ int main()
       cout << "Clearing Screen..." << endl;
       system("CLS");
       cout << "Screen Cleared..." << endl;
+      break;
    default:
       cout << "Enter a choice between 1-10 only...." << endl;
       cout << "Exiting..." << endl;

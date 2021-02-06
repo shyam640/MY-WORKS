@@ -1,0 +1,1 @@
+{"name":"Local: ORDTEAMS","url":"f:\\MY_WORKS\\ICPClearningSeries\\ORDTEAMS.cpp","tests":[{"id":1611383439012,"input":"3\n1 2 3\n2 3 4\n2 3 5\n1 2 3\n2 3 4\n2 3 4\n5 6 5\n1 2 3\n2 3 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\MY_WORKS\\ICPClearningSeries\\ORDTEAMS.cpp","group":"local","local":true}

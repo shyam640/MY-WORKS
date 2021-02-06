@@ -1,0 +1,1 @@
+{"name":"Local: CNOTE","url":"f:\\MY WORKS\\Codechef Problems\\CNOTE.cpp","tests":[{"id":1609171905276,"input":"3\n3 1 2 2\n3 4\n2 2    \n3 1 2 2\n2 3\n2 3    \n3 1 2 2\n1 1\n1 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\MY WORKS\\Codechef Problems\\CNOTE.cpp","group":"local","local":true}

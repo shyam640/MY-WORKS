@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <meta name="description" content="A page for best content and most flexible quiz . Expirience the best environmnent of exam . ">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quiz.edu | Home</title>
+   <meta property="og:title" content="Quiz@Exams">
+   <meta property="og:type" content="website">
+   <meta property="og:description" content="A page for best content and most flexible quiz . Expirience the best environmnent of exam . ">
+   <meta property="og:url" content="https://quiz.edu/home">
+   <meta property="og:site_name" content="quiz.edu">
+   <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+   <link rel="icon" href="logo.jpg" type="image/x-icon">
+   <link rel="stylesheet" href="homepage.css">
+   <script src="homepage.js"></script>
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   <noscript>Java script has been disabled on this site.</noscript>
+   
+</head>
+
+<body>
+   <div class="complete-header">
+      <div class="top-head">
+         <div class="cursor"></div>
+         <div class="Box1"></div>
+         <nav>
+            <a href="w1.htm"><img src="logo.jpg" alt="logo"  class="logo"></a>
+            <ul class="nav-list">
+               <li><a href="w1.htm">Home</a></li>
+               <li><a href="#">Upload Suggestions</a></li>
+               <li><a href="#">Download</a></li>
+               <li><a href="#">Gallery</a></li>
+               <li><a href="#">Contact Us</a></li>
+               <li><a href="#">About</a></li>
+            </ul>
+            
+            <label class="signup">
+               <div class="l-s">
+                  <button class="btn"><a href="login.htm">Login</a></button>
+                  <button class="btn"><a href="login.htm">Sign-up</a></button>
+               </div>
+            </label>
+
+         </nav>
+         <section>
+            <div class="hamburger"><a href="#">
+                  <span class="line line1"></span>
+                  <span class="line line2"></span>
+                  <span class="line line3"></span>
+                  <span class="line line4"></span>
+                  <span class="line line5"></span>
+                  <span class="line line6"></span>
+               </a>
+
+            </div>
+            <div class="nav">
+      <a href="w1.htm"><i id="bar" class="fas fa-times-circle"></i></a>
+               <ul class="nav-list">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Live Tests</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">Notice</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="MySelf/homepage.html">About</a></li>
+
+               </ul>
+            </div>
+         </section>
+
+      </div>
+      <div class="container">
+         <div class="time">
+            <span id="hour">00</span>
+            <span class="blink-colon">:</span>
+            <span id="minute">00</span>
+            <span class="blink-colon">:</span>
+            <span id="second">00</span>
+         </div>
+         <div class="date-container">
+            <span id="date">01/01/2021</span>
+            <span id="day">Saturday</span>
+         </div>
+      </div>
+   </div>
+   <div class="sometext">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit perspiciatis dolore obcaecati, 
+         eum dolor fugiat unde cum quasi autem sed praesentium corporis tenetur recusandae possimus 
+         necessitatibus corrupti. Illo, exercitationem ex.
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam provident atque amet dolorum 
+         veritatis sint autem quia nesciunt asperiores, libero dolorem quam eius minus ducimus nobis suscipit 
+         incidunt quo molestias.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rerum inventore eveniet voluptatum 
+         nostrum incidunt amet aliquid, nesciunt quidem perspiciatis dolorum sequi sed dicta deleniti ipsam 
+         corporis architecto quas a.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat impedit, veniam facilis reiciendis vel eligendi debitis quaerat magni soluta, corporis adipisci omnis dignissimos mollitia nihil similique accusamus optio ipsum?
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quasi nobis, est magnam quisquam, animi quo pariatur consequuntur delectus nemo deserunt omnis qui dolorum? Nulla fugiat ratione soluta perspiciatis nam!
+      </p>
+   </div>
+   
+</body>
+<script>
+   const hamburger = document.querySelector('.hamburger');
+   const nav = document.querySelector('.nav');
+
+   hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('clicked');
+      nav.classList.toggle('show');
+   })
+
+   function updateTime(){
+      const hourEl = document.querySelector("#hour");
+      const minuteEL = document.querySelector("#minute");
+      const secondEL = document.querySelector("#second");
+      let d = new Date();
+      let hours = d.getHours();
+      let minutes = d.getMinutes();
+      let seconds = d.getSeconds();
+      if(hours>=0 && hours<=9) hours ="0"+hours;
+      if(minutes>=0 && minutes<=9) minutes="0"+minutes;
+      if(seconds>=0 && seconds<=9) seconds="0"+seconds;
+      hourEl.innerHTML = hours;
+      minuteEL.innerHTML = minutes;
+      secondEL.innerHTML = seconds;
+   
+      const dateEl = document.querySelector("#date");
+      let date = d.getDate();
+      if(date>=0 && date<=9) date = "0"+date;
+      let month =d.getMonth();
+      if(month>=0 && month<=9) month = "0"+(month+1);
+      let year =d.getFullYear();
+      dateEl.innerHTML = date+'/'+month+'/'+year;
+      
+      const datEl = document.querySelector("#day");
+      let daynumber = d.getDay();
+      let day = "   ";
+      switch(daynumber){
+         case 0: day="Sunday"; break;
+         case 1: day="Monday" ;break;
+         case 2: day="Tuesday" ;break;
+         case 3: day="Wednesday" ;break;
+         case 4: day="Thursday" ;break;
+         case 5: day="Friday" ;break;
+         case 6: day="Saturday" ;break;
+      }
+      dayEl.innerHTML = day;
+   }
+   
+   window.onload = function (){
+      setInterval(updateTime,1000)
+   };
+   
+</script>
+
+
+</html>

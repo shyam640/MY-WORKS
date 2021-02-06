@@ -1,16 +1,20 @@
+//                        -------------------------
+//                        | SUCCESSFULLY EXECUTED |
+//                        -------------------------
 #include <bits/stdc++.h>
 
 using namespace std;
 
 vector<string> split_string(string);
 
-//Complete the aVeryBigSum function below.
-long aVeryBigSum(vector<long> ar) {
-   long int sum=0;
-   int carry=0;
-   for(int i=ar.size()-1;i>=0;i++){
-      
-   }
+// Complete the aVeryBigSum function below.
+long long aVeryBigSum(vector<long> ar) {
+    long long int sum=0;
+    for(int i=0;i<ar.size();i++){
+        sum+=ar[i];
+        cout<<sum<<endl;
+    }
+    return sum;
 }
 
 int main()
@@ -34,15 +38,11 @@ int main()
         ar[i] = ar_item;
     }
 
-    for (int i = 0; i < ar_count; i++) {
-        cout<<ar[i]<<" ";
-    }
+    long long result = aVeryBigSum(ar);
+        cout<<result<<endl;
+    // fout << result << "\n";
 
-   long result = aVeryBigSum(ar);
-
-    //fout << result << "\n";
-    cout << result <<"\n";
-    //fout.close();
+    // fout.close();
 
     return 0;
 }
