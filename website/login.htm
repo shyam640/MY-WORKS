@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Login | SignUp</title>
+   <link rel="stylesheet" href="login.css">
 </head>
+<script>
+   const navToggle = document.querySelector('.nav-toggle');
+   const navlinks = document.querySelectorAll('.nav_link')
+
+   navToggle.addEventListener('click',()=>{
+      document.body.classList.toggle('nav-open');
+   });
+
+   navLinks.forEach(link=>{
+      link.addEventListener('click',()=>{
+         document.body.classList.remove('nav-open');
+      })
+   })
+
+   
+</script>
+
 <body>
+   <header>
+      <button class="nav-toggle">
+         <span class="hamburger"></span>
+      </button>
+      <nav class="nav" id="navbar">
+         <ul class="nav_list">
+            <label>
+               <li class="nav_item">
+                  <a href="w1.htm" class="nav_link">Home</a>
+               </li>
+            </label>
+            <label>
+               <li class="nav_item">
+                  <a href="" class="nav_link">Blogs</a>
+               </li>
+            </label><label>
+               <li class="nav_item">
+                  <a href="#contact" class="nav_link">Contact Us</a>
+               </li>
+            </label><label>
+               <li class="nav_item">
+                  <a href="MySelf/homepage.html" class="nav_link">About Me</a>
+               </li>
+            </label>
+         </ul>
+      </nav>
+   </header>
    
 </body>
+
 </html>

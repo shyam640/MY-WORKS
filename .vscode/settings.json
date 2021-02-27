@@ -32,6 +32,7 @@
       "cwctype": "cpp",
       "deque": "cpp",
       "forward_list": "cpp",
+      "graphics":"cpp",
       "list": "cpp",
       "map": "cpp",
       "set": "cpp",
@@ -74,5 +75,6 @@
       "typeinfo": "cpp",
       "valarray": "cpp",
       "variant": "cpp"
-   }
+   },
+   "C_Cpp.errorSquiggles": "Disabled"
 }

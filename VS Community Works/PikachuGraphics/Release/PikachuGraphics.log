@@ -1,0 +1,8 @@
+﻿  Source.cpp
+F:\MY_WORKS\VS Community Works\PikachuGraphics\Source.cpp(5,17): warning C4326: return type of 'main' should be 'int' instead of 'void'
+F:\MY_WORKS\VS Community Works\PikachuGraphics\Source.cpp(6,19): error C2065: 'DETECT': undeclared identifier
+F:\MY_WORKS\VS Community Works\PikachuGraphics\Source.cpp(9,5): error C3861: 'clrscr': identifier not found
+F:\MY_WORKS\VS Community Works\PikachuGraphics\Source.cpp(11,5): error C3861: 'initgraph': identifier not found
+F:\MY_WORKS\VS Community Works\PikachuGraphics\Source.cpp(12,5): error C3861: 'line': identifier not found
+F:\MY_WORKS\VS Community Works\PikachuGraphics\Source.cpp(14,5): error C3861: 'closegraph': identifier not found
+F:\MY_WORKS\VS Community Works\PikachuGraphics\Source.cpp(13,5): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.

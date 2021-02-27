@@ -1,122 +1,58 @@
-<!DOCTYPE html> 
-<html> 
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculator</title>
+</head>
 <body> 
-    <h1 style="position:center">TIME TABLE</h1> 
-    <table border="5" cellspacing="0" align="center"> 
-        <!--<caption>Timetable</caption>-->
-        <tr> 
-            <td align="center" height="50" 
-                width="100"><br> 
-                <b>Day/Period</b> 
-            </td> 
-            <td align="center" height="50" 
-                width="100"> 
-                <b>I<br>9:30-10:20</b> 
-            </td> 
-            <td align="center" height="50" 
-                width="100"> 
-                <b>II<br>10:20-11:10</b> 
-            </td> 
-            <td align="center" height="50" 
-                width="100"> 
-                <b>III<br>11:10-12:00</b> 
-            </td> 
-            <td align="center" height="50" 
-                width="100"> 
-                <b>12:00-12:40</b> 
-            </td> 
-            <td align="center" height="50" 
-                width="100"> 
-                <b>IV<br>12:40-1:30</b> 
-            </td> 
-            <td align="center" height="50" 
-                width="100"> 
-                <b>V<br>1:30-2:20</b> 
-            </td> 
-            <td align="center" height="50" 
-                width="100"> 
-                <b>VI<br>2:20-3:10</b> 
-            </td> 
-            <td align="center" height="50" 
-                width="100"> 
-                <b>VII<br>3:10-4:00</b> 
-            </td> 
-        </tr> 
-        <tr> 
-            <td align="center" height="50"> 
-                <b>Monday</b></td> 
-            <td align="center" height="50">Eng</td> 
-            <td align="center" height="50">Mat</td> 
-            <td align="center" height="50">Che</td> 
-            <td rowspan="6" align="center" height="50"> 
-                <h2>L<br>U<br>N<br>C<br>H</h2> 
-            </td> 
-            <td colspan="3" align="center" 
-                height="50">LAB</td> 
-            <td align="center" height="50">Phy</td> 
-        </tr> 
-        <tr> 
-            <td align="center" height="50"> 
-                <b>Tuesday</b> 
-            </td> 
-            <td colspan="3" align="center" 
-                height="50">LAB 
-            </td> 
-            <td align="center" height="50">Eng</td> 
-            <td align="center" height="50">Che</td> 
-            <td align="center" height="50">Mat</td> 
-            <td align="center" height="50">SPORTS</td> 
-        </tr> 
-        <tr> 
-            <td align="center" height="50"> 
-                <b>Wednesday</b> 
-            </td> 
-            <td align="center" height="50">Mat</td> 
-            <td align="center" height="50">phy</td> 
-            <td align="center" height="50">Eng</td> 
-            <td align="center" height="50">Che</td> 
-            <td colspan="3" align="center" 
-                height="50">LIBRARY 
-            </td> 
-        </tr> 
-        <tr> 
-            <td align="center" height="50"> 
-                <b>Thursday</b> 
-            </td> 
-            <td align="center" height="50">Phy</td> 
-            <td align="center" height="50">Eng</td> 
-            <td align="center" height="50">Che</td> 
-            <td colspan="3" align="center" 
-                height="50">LAB 
-            </td> 
-            <td align="center" height="50">Mat</td> 
-        </tr> 
-        <tr> 
-            <td align="center" height="50"> 
-                <b>Friday</b> 
-            </td> 
-            <td colspan="3" align="center" 
-                height="50">LAB 
-            </td> 
-            <td align="center" height="50">Mat</td> 
-            <td align="center" height="50">Che</td> 
-            <td align="center" height="50">Eng</td> 
-            <td align="center" height="50">Phy</td> 
-        </tr> 
-        <tr> 
-            <td align="center" height="50"> 
-                <b>Saturday</b> 
-            </td> 
-            <td align="center" height="50">Eng</td> 
-            <td align="center" height="50">Che</td> 
-            <td align="center" height="50">Mat</td> 
-            <td colspan="3" align="center" 
-                height="50">SEMINAR 
-            </td> 
-            <td align="center" height="50">SPORTS</td> 
-        </tr> 
-    </table> 
+   <div>Calculator</div> 
+   <table border="1"> 
+      <tr> 
+         <td colspan="3"><input type="text" id="result"/></td> 
+         <td><input type="button" value="c" onclick="cleaScreen()"/> </td> 
+      </tr> 
+      <tr> 
+         <td><input type="button" style="background-color: aqua;" value="1" onclick="calculatorfunction('1')"/> </td> 
+         <td><input type="button" style="background-color: aqua;" value="2" onclick="calculatorfunction('2')"/> </td> 
+         <td><input type="button"  style="background-color: aqua;" value="3" onclick="calculatorfunction('3')"/> </td> 
+         <td><input type="button" style="background-color: rgb(0, 255, 0);" value="/" onclick="calculatorfunction('/')"/> </td> 
+      </tr> 
+      <tr> 
+         <td><input type="button" style="background-color: aqua;" value="4" onclick="calculatorfunction('4')"/> </td> 
+         <td><input type="button"  style="background-color: aqua;" value="5" onclick="calculatorfunction('5')"/> </td> 
+         <td><input type="button" style="background-color: aqua;" value="6" onclick="calculatorfunction('6')"/> </td> 
+         <td><input type="button" style="background-color: rgb(0, 255, 115);" value="-" onclick="calculatorfunction('-')"/> </td> 
+      </tr> 
+      <tr> 
+         <td><input type="button" style="background-color: aqua;" value="7" onclick="calculatorfunction('7')"/> </td> 
+         <td><input type="button" style="background-color: aqua;"  value="8" onclick="calculatorfunction('8')"/> </td> 
+         <td><input type="button" style="background-color: aqua;"  value="9" onclick="calculatorfunction('9')"/> </td> 
+         <td><input type="button" style="background-color: rgb(0, 255, 85);"  value="+" onclick="calculatorfunction('+')"/> </td> 
+      </tr> 
+      <tr> 
+         <td><input type="button" style="background-color: aqua;" value="." onclick="calculatorfunction('.')"/> </td> 
+         <td><input type="button" style="background-color: aqua;"  value="0" onclick="calculatorfunction('0')"/> </td> 
+         <td><input type="button" style="background-color: aqua;" value="=" onclick="solve()"/> </td> 
+         <td><input type="button" style="background-color: rgb(0, 255, 34);" value="*" onclick="calculatorfunction('*')"/> </td> 
+      </tr> 
+   </table> 
 </body> 
-  
-</html> 
+<script>
+   function calculatorfunction(num) 
+         { 
+             document.getElementById("result").value+=num 
+         } 
+           
+         function solve() 
+         {  
+             document.getElementById("result").value=eval(document.getElementById("result").value)
+         } 
+           
+         function clearScreen()
+         {
+             document.getElementById("result").value = ""
+         }
+</script>
+</html>

@@ -1,60 +1,58 @@
-// Three classes Person ,  Professor and Student
-// class person --> Name and age
-// class professor --> publications and cur_id  and inheriting from class person
-//      Two funtions getdata and putdata(name,age,publication) and (name,age,publications,cur_id)
-// class student --> marks[6] and cur_id and inheriting from class person
-//      Two funtions getdata and putdata(name,age,marks of stu. in 6 subj.) and (name,age,sumofmarks,cur_id)
-
-//   CONSTRAINTS
-//   lenght of name<100
-//   1<=age<=80
-//   1<=publications<=1000
-//   0<=marks[i]<=100
-
-//   Time complexity  is
-
-
-#include <cmath>
-#include <cstdio>
 #include <vector>
 #include <iostream>
 #include <algorithm>
-#include<stdlib.h>
 using namespace std;
-
 class Person{
-      private:
-      string name;
-      int age;
-      public:
-      void getdata(){
-         getline(cin,name);
-         scanf("%d ",&age);
-      }
-      void putdata(){
-         cout<<name<<" "<<age;
-
-      }
+    public:
+        string name;
+        int age;
+        virtual void getdata(){
+            cin>>name;
+            cin>>age;
+        }
+        virtual void putdata(){
+            cout<<name<<" "<<age<<" ";
+        }
 };
 
+int prof_id=0,stu_id=0;
 class Professor : public Person{
-      private:
-          int publications;
-          int cur_id=1;
-      public:
-          void getdata(){
-             scanf("%d ",&publications);
-             
-          }  
+        int cur_id=++prof_id;
+    public:
+        int publications;
+
+        void getdata(){
+            cin>>name;
+            cin>>age;
+            cin>>publications;
+        }  
+        void putdata(){
+            cout<<name<<" "<<age<<" "<<publications<<" "<<++cur_id<<endl;
+        }
 
 };
 
 class Student : public Person{
-
+    int cur_id=++stu_id;
+    public:
+        int marks[6];
+        void getdata(){
+            cin>>name>>age;
+            for(int i=0;i<6;i++)
+                cin>>marks[i];
+        }
+        void putdata(){
+            cout<<name<<" "<<age<<" ";
+            int sum=0;
+            for(int i=0;i<6;i++)
+                sum+=marks[i];
+            cout<<sum<<" "<<++cur_id<<endl;
+        }
+        
 };
 
 int main(){
-    system("CLS");
+
     int n, val;
     cin>>n; //The number of objects that is going to be created.
     Person *per[n];
@@ -79,4 +77,3 @@ int main(){
     return 0;
 
 }
-
