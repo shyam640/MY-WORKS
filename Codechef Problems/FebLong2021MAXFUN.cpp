@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 #include<vector>
 using namespace std;
-long long int sum(int x,int y,int z){
+inline long long int sum(int x,int y,int z){
    return ((y-x)+(z-y)+(z-x));
 }
 
@@ -14,12 +14,9 @@ int main(){
       vector<long long> arr(n);
       for(int i=0;i<n;i++)
          cin>>arr[i];
-      stable_sort(arr.begin(),arr.end());
-      long long int max_ans=0;
-      for(int i=1;i<n-1;i++){
-         long long int temp=sum(arr[i-1],arr[i],arr[i+1]);
-         max_ans=max(max_ans,temp);
-      }
-      cout<<max_ans<<endl;
+      long long int max_element=*max_element(arr.begin(),arr.end());
+      long long int min_element=*min_element(arr.begin(),arr.end());
+      int result=(2*(max_element-min_element));
+      cout<<result<<endl;
    }
 }

@@ -2,36 +2,59 @@ body{
    background-color: rgb(0, 0, 0);
    color: aliceblue;
    min-height: 100vh;
-   overflow: hidden;
-   
-   
+   overflow-x: hidden;
+   padding: 10px;
+}
+html{
+   scroll-behavior: smooth;
 }
 
+.complete-header{
+   display: flexbox;
+   flex-wrap: wrap;
+}
 
-
+.top-head{
+   display: flex;
+   flex-wrap: wrap;
+}
 
 link{
    display: none;
    text-decoration: none;
 }
-
-.container{
-   margin: 200px 200px 200px 600px;
-   z-index: -1;
+.display-watch{
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   position: sticky;
 }
 
-.container{
-   overscroll-behavior-x: fixed;
+.time-date{
+   display: block;
+   position: relative;
+   top: 97px;left: 21%;
+   
+}
+.watch-container{
+   align-content: center;
+   z-index: -100;
+}
+
+.watch-container{
    border: 3px solid rgb(245, 247, 248);
-   width:300px; height:300px;
-   background-position-x: center !important;
-   display: flex;justify-content: center;
-   align-items: center;flex-direction: column;
+   width: 250px;height: 250px;
+   display: flexbox;
+   flex-shrink: 2;
+   justify-content: center;
+   align-items: center;
+   
+   justify-content: center;
    color: #fff;font-size: 32px;
    border-radius: 50%;
    opacity: 0.3;
-   background: rgba(61, 62, 66, 0.5);
-   box-shadow: 10px 0px 6px 12px rgba(15, 174, 236, 0.911),8px,0,0,12px rgba(23, 209, 223, 0.61) inset;
+   background: transparent;
+   
 }
 
 .blink-colon{
@@ -46,14 +69,11 @@ link{
 .date-container{
    margin-top: 6px;
    font-size: 16px;
+   
    color: rgba(255,255,255,0.8);
 }
 
-@media only screen and(max-width:768px){
-   [class=container]{
-      width: 100%;
-   }
-}
+/* Media Selector to be used*/
 
 
 .logo{
@@ -67,9 +87,9 @@ link{
 
 #bar{
    position: absolute;
-   top: 10px;right: 10px;
+   top: 50px;right: 70px;
    color: white;
-   z-index: 2;
+   z-index: 100;
 }
 
 .hamburger{
@@ -202,9 +222,7 @@ link{
 
 
 
-.sometext{
-   position: relative;
-}
+
 
 
 
@@ -264,4 +282,80 @@ link{
    z-index: -1;
    transition: all 0.5s;
 }
+
+.heading{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   padding: 40px;
+   text-decoration:underline;
+}
+
+.heading:hover{
+   color: #03f817;
+}
+
+.tests{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.phone{
+   display: inline;
+   width: 264px;
+   height: 333px;
+   padding: 8px;
+   border-radius: 36px;
+   background:#b4d5f5;
+   box-shadow: 0 50px 100px -20px rgb(50 50 93 / 25%),0 30px 60px -30px rgb(0 0 0 / 30%),inset 0 -2px 6px 0 rgb(10 37 64 / 35%);
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+}
+
+.phone__card{
+   display: grid;
+   gap: 0.6rem;
+   padding: 0.8rem;
+   border: 0.1rem solid #47474d;
+   border-radius: 0.2rem;
+   margin: 0 0.8rem 0.6rem 0.8rem;
+   
+}
+
+
+.phone__skeleton{
+   width: 100%;
+   height: 1rem;
+   border-radius: 0.2rem;
+   background-image: linear-gradient(90deg,#6e6ef5 0px,#6e6efc 20px,#7b7bfd 100px);
+   background-size: 600px;
+   animation: skeleton-loading 2s infinite ease-out;
+   cursor: pointer;
+}
+@keyframes skeleton-loading{
+   0%{
+      background-position: -100px;
+   }
+   40%,100%{
+      background-position: 200px;
+   }
+}
+
+.phone__button{
+   background-color: #07070e;
+   color: #f6f9fc;
+   display: grid;
+   place-items: center;
+   padding: 0.4rem;
+   font-size: 0.8rem;
+   user-select: none;
+   border-radius: 0.2rem;
+   margin: 0 0.8rem;
+   cursor: pointer;
+}
+
+
 
