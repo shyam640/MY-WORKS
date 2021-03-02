@@ -1,38 +1,36 @@
 {
-    "configurations": [
-        {
-            "name": "Win32",
-            "includePath": [
-                "${workspaceFolder}/**",
-                "C:\\MinGW\\**",
-                "C:/MinGW/**"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "compilerPath": "C:\\MinGW\\bin\\gcc.exe",
-            "cStandard": "gnu17",
-            "cppStandard": "gnu++20",
-            "intelliSenseMode": "gcc-x86",
-            "configurationProvider": "ms-vscode.cmake-tools",
-            "browse": {
-                "path": [
-                    "C:\\MinGW",
-                    "C:/MinGW",
-                    "C:\\MinGW\\**"
-                ]
-            },
-            "compilerArgs": [
-                "-lbgi",
-                "-lgdi32",
-                "-Icomdlg32",
-                "-luuid",
-                "-loleaut32",
-                "-lole32"
-            ]
-        }
-    ],
-    "version": 4
+"configurations": [
+  {
+      "name": "Win32",
+      "includePath": [
+          "additional/paths",
+          "${default}"
+      ],
+      "defines": [
+          "${default}"
+      ],
+      "macFrameworkPath": [
+          "${default}",
+          "additional/paths"
+      ],
+      "forcedInclude": [
+          "${default}",
+          "additional/paths"
+      ],
+      "compileCommands": "${default}",
+      "browse": {
+          "limitSymbolsToIncludedHeaders": true,
+          "databaseFilename": "${default}",
+          "path": [
+              "${default}",
+              "additional/paths"
+          ]
+      },
+      "intelliSenseMode": "${default}",
+      "cStandard": "${default}",
+      "cppStandard": "${default}",
+      "compilerPath": "${default}"
+  }
+],
+  "version":4
 }

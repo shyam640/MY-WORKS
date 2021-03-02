@@ -464,13 +464,13 @@ class Pikachu:
         selfDraw.cheek2(107, 63)
         selfDraw.Ear1(-250, 100)
         selfDraw.Ear2(140, 270)
-        selfDraw.eye(-85, 90)
+        selfDraw.Eye1(-85, 90)
         selfDraw.Eye2(50, 110)
         t.hideturtle()
 
-    def topi(self, x, y):
-        self.meme(x, y)
-        t = self.t
+    def Cap(selfDraw, x, y):
+        selfDraw.action(x, y)
+        t = selfDraw.t
         t.fillcolor('#CD0000')
         t.begin_fill()
         t.seth(200)
@@ -492,7 +492,7 @@ class Pikachu:
         t.fd(50)
         t.circle(8, 100)
         t.end_fill()
-        self.meme(-168.47, 185.52)
+        selfDraw.action(-168.47, 185.52)
         t.seth(36)
         t.circle(-270, 54)
         t.left(180)
@@ -507,11 +507,11 @@ class Pikachu:
         t.circle(200, 45)
         t.end_fill()
 
-        self.meme(-58, 270)
+        selfDraw.action(-58, 270)
         t.pencolor('#228B22')
         t.dot(35)
 
-        self.meme(-30, 280)
+        selfDraw.action(-30, 280)
         t.fillcolor('#228B22')
         t.begin_fill()
         t.seth(100)
@@ -525,16 +525,16 @@ class Pikachu:
         t.end_fill()
         t.pencolor('#000000')
 
-    def start(self):
-        self.jiu()
+    def start(selfDraw):
+        selfDraw.jiu()
 
 
 def main():
-    print('Painting the Cartoon... ')
-    turtle.screensize(800, 600)
-    turtle.title('Cartoon')
-    cartoon = Cartoon()
-    cartoon.start()
+    print('Lets Start Printing Pikachu... ')
+    turtle.screensize(1200, 900)
+    turtle.title('Pikachu')
+    pikachu = Pikachu()
+    pikachu.start()
     turtle.mainloop()
 
 
