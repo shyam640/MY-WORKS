@@ -357,5 +357,179 @@ link{
    cursor: pointer;
 }
 
+footer{
+   position: relative;
+   width: auto;
+   height: auto;
+   padding: 50px 100px;
+   background: rgb(29, 28, 28);
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
 
+}
 
+footer .container{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+
+footer .container .set{
+   margin-right: 30px;
+}
+
+footer .container .set .aboutUs{
+   width: 40%;
+
+}
+
+footer .container h2{
+   position: relative;
+   color: #fff;
+   font-weight: 500;
+   margin-bottom: 15px;
+
+}
+
+footer .container h2:before{
+   content: '';
+   bottom: -5px;
+   left: 0;
+   width: 50px;
+   height: 2px;
+   background:#f00;
+
+}
+
+footer p{
+   color: #999;
+}
+
+.set{
+   margin-top: 20px;
+   display: flex;
+
+}
+
+.set li{
+   list-style:none;
+
+}
+
+.set li a{
+   display: inline-block;
+   width: 40px;
+   height: 40px;
+   background:#222;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 20px;
+   text-decoration: none;
+   border-radius: 4px;
+}
+
+.see li a:hover{
+   background-color: rgba(38, 209, 195, 0.445);
+   border: 3px red;
+   border-radius: 7px;
+}
+
+.see li a .fa{
+   color: #fff;
+   font-size: 20px;
+
+}
+
+.quickLinks{
+   position: relative;
+   width: 25%;
+}
+
+.quickLinks ul li{
+   list-style: none;
+
+}
+
+.quickLinks ul li a{
+   color: #999;
+   text-decoration: none;
+   margin-bottom: 10px;
+   display: inline-block;
+
+}
+
+.quickLinks ul li a:hover{
+   color: #fff;
+
+}
+
+.contact{
+   width: calc(35% - 60px);
+   margin-right: 0 !important;
+
+}
+
+.contact .info{
+   position: relative;
+
+}
+
+.contact .info li{
+   display: flex;
+   margin-bottom: 16px;
+
+}
+
+.contact .info li span:nth-child(1){
+   color: #fff;
+   font-size: 20px;
+   margin-right: 10px;
+
+}
+
+.contact .info li span{
+   color:#999;
+}
+
+.contact .info li a{
+   color: #999;
+
+}
+
+.contact .info li a{
+   color: #999;
+   text-decoration: none;
+
+}
+
+.contact .info li a:hover{
+   color: #fff;
+}
+
+.copyrightText{
+   width: auto;
+   background-color: #141414;
+   padding: 8px 100px;
+   text-align: center;
+   color: #999;
+
+}
+
+@media (max-width:991px){
+   footer{
+      padding: 0px;
+   }
+   footer .container .set{
+      margin-right: 0;
+      margin-bottom: 40px;
+   }
+   .set .aboutUs , .quickLinks, .contact{
+      width: 100%;
+   }
+   .copyrightText{
+      padding: 8px 40px;
+   }
+}

@@ -30,9 +30,10 @@ body{
    line-height: 1.6;
    font-family: 'Times New Roman', Times, serif;
    display: grid;
+   font-weight: 300;
+   background-image: url(login_image.jpg);
+   background-size: cover;
 }
-
-
 
 
 p{
@@ -160,9 +161,37 @@ header{
    border: 2px solid rgb(248, 173, 173);
 }
 
+.image{
+   position: absolute;
+   top: 20px;
+   height: 100%;
+   width: 100%;
+   z-index: -3;
+   
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.logo{
+   height: 70px;
+   width: 70px;
+   position: relative;
+   top: 20px;
+   z-index: 5;
+   border-radius: 50%;
+}
+
+.nav_text{
+   position: relative;
+}
+
+@import url('https://fonts.googleapis.com/css?family=poppins:400,500,600,700,800,900');
+
 .icons{
    display: inline-flex;
    flex-wrap: wrap;
+   justify-content: center;
    -ms-flex-item-align: center;
 }
 
