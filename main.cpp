@@ -1,45 +1,39 @@
+// Method-1    using DS
+
 #include<bits/stdc++.h>
 using namespace std;
-struct node
-{
-	int data;
-	struct node*next;
-	struct node*prev;
-};
-struct node*add_at_empty(struct node*head,int data)
-{
-	struct node*temp=(struct node*)malloc(sizeof(struct node));
-	temp->data=data;
-	temp->next=NULL;
-	temp->prev=NULL;
-	return temp;
-}
-struct node*add_to_last(struct node*head,int data)
-{
-	struct node*temp=(struct node*)malloc(sizeof(struct node));
-	temp->data=data;
-	head->next=temp;
-	temp->prev=head;
-	temp->next=NULL;
-	return temp;
-}
-int main()
-{
-	#ifndef OUTLINE_JUDGE
-	freopen("input.txt","r",stdin);
-	freopen("output.txt","w",stdout);
-	#endif
-	struct node*head=NULL;
-	head=add_at_empty(head,54);
-	struct node*temp=head;
-	temp=add_to_last(temp,32);
-	temp=add_to_last(temp,78);
-	temp=add_to_last(temp,23);
-	temp=add_to_last(temp,61);
-	while(head!=NULL)
-	{
-		cout<<head->data<<" ";
-		head=head->next;
+int main(){
+	int n;						// size of array
+	cin>>n;
+	vector<int> arr(n);
+	for(int i=0;i<n;i++)	cin>>arr[i];
+	stable_sort(arr.begin(),arr.end());
+	int fst_pstv=0,zro_cnt=0;
+	while(!arr[fst_pstv]>0)
+		fst_pstv++;
+	// cout<<fst_pstv<<endl;
+	int temp1=fst_pstv;
+	vector<int> ans(n);
+	int temp=n-fst_pstv;
+	for(int i=0;i<n;i+=2){
+		if(temp>=(n/2) and zro_cnt<temp1){
+			ans[i]=arr[fst_pstv];
+			ans[i+1]=arr[zro_cnt];
+		}
+		else if(zro_cnt<temp1){
+			ans[i]=arr[zro_cnt];
+			ans[i+1]=arr[fst_pstv];
+		}
+		else{
+			ans[i]=arr[i];
+			ans[i+1]=arr[i+1];
+		}
+		// cout<<ans[i]<<" "<<ans[i+1]<<endl;
+		fst_pstv++;zro_cnt++;
 	}
-	return 0;
+	arr=ans;
+	for(int i=0;i<n;i++)
+		cout<<arr[i]<<" ";
 }
+
+
