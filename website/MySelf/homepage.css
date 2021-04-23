@@ -1,21 +1,20 @@
-@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
-html{
-   box-sizing: border-box;
-}
+
+
 *,*::before,*::after{
    box-sizing: inherit;
 }
 
-html{
+/* html{
    -ms-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
-}
+} */
 
 body{
    background-color: rgb(127, 138, 143);
    color: black;
-   z-index: -1;
+   
    font-family: sans-serif;
 }
 .dark-mode{
@@ -30,7 +29,7 @@ body{
    color:inherit;
    display: block;
    position: relative;
-   top: 0px;left: 95%;
+   top: 0px;right: 5%;
    background-color: transparent;
 }
 
@@ -88,93 +87,7 @@ body{
 }
 
 
-.Creativity{
-   animation: creativity 0.3s infinite ease-in-out;
-   
-}
-@keyframes creativity{
-   0% {top: 30px;opacity: 0.2;color: rgba(0, 0, 255, 0.459);}
-   50% {top: 60px;opacity: 0.6;color: rgba(0, 0, 255, 0.795);}
-   100% {top: 100px;opacity: 1;color: blue;}
-}
 
-.arises{
-   animation: arises 0.6s infinite ease-in-out;
-   
-}
-@keyframes arises{
-   0% {top: 30px;opacity: 0.2;color: rgba(0, 0, 255, 0.459);}
-   50% {top: 60px;opacity: 0.6;color: rgba(0, 0, 255, 0.795);}
-   100% {top: 100px;opacity: 1;color: blue;}
-}
-
-.from{
-   animation: from 0.9s infinite ease-in-out;
-   
-}
-@keyframes from{
-   0% {top: 30px;opacity: 0.2;color: rgba(255, 11, 2, 0.527);}
-   50% {top: 60px;opacity: 0.6;color: rgba(255, 0, 0, 0.815);}
-   100% {top: 100px;opacity: 1;color: red;}
-}
-.relativity{
-   animation: relativity 1.2s infinite ease-in-out;
-   
-}
-@keyframes relativity{
-   0% {top: 30px;opacity: 0.2;color: rgba(255, 11, 2, 0.527);}
-   50% {top: 60px;opacity: 0.6;color: rgba(255, 0, 0, 0.815);}
-   100% {top: 100px;opacity: 1;color: red;}
-}
-
-.if {
-   animation: anim3 1.5s infinite ease-in-out;
-}
-.you {
-   animation: anim3 1.8s infinite ease-in-out;
-}
-.could {
-   animation: anim3 2.1s infinite ease-in-out;
-}
-
-@keyframes anim3{
-   0% {top: 30px;opacity: 0.2;color: rgba(2, 27, 255, 0.527);}
-   50% {top: 60px;opacity: 0.6;color: rgba(38, 0, 255, 0.815);}
-   100% {top: 100px;opacity: 1;color: rgb(25, 0, 255);}
-}
-
-.relate {
-   animation: anim4 2.4s infinite ease-in-out;
-}
-.everything {
-   animation: anim4 2.7s infinite ease-in-out;
-}
-
-@keyframes anim4{
-   0% {top: 30px;opacity: 0.2;color: rgba(255, 10, 2, 0.527);}
-   50% {top: 60px;opacity: 0.6;color: rgba(255, 30, 0, 0.815);}
-   100% {top: 100px;opacity: 1;color: rgb(255, 30, 0);}
-}
-
-
-.you-2 {
-   animation: anim5 3.0s infinite ease-in-out;
-}
-.can {
-   animation: anim5 3.3s infinite ease-in-out;
-}
-.create {
-   animation: anim5 3.6s infinite ease-in-out;
-}
-.anything{
-   animation: anim5 3.9s infinite ease-in-out;
-}
-
-@keyframes anim5{
-   0% {top: 30px;opacity: 0.2;color: rgba(2, 69, 255, 0.527);}
-   50% {top: 60px;opacity: 0.6;color: rgba(25, 0, 255, 0.815);}
-   100% {top: 100px;opacity: 1;color: rgb(25, 0, 255);}
-}
 
 
 .nav-bar{

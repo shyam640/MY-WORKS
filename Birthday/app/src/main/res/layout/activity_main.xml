@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackgound"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/sparkleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="602dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/sparkleback" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/round"
+                    android:tint="#F4CF63"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/spotlight" />
+
+                <ImageView
+                    android:id="@+id/profileimage"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-400dp"
+                    android:layout_marginBottom="20dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/timer_border"
+                    android:contentDescription="@string/image"
+                    tools:srcCompat="@drawable/teddy" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/messagebackground"
+                android:fontFamily="casual"
+                android:padding="10dp"
+                android:scrollbarSize="3dp"
+                android:text="@string/hi_you_re_privileged_to_experience_another_year_on_earth_and_you_can_only_be_grateful_to_god_for_that_sending_birthday_wishes_your_way_for_a_beautiful_year_ahead_may_your_lucky_stars_continue_to_shine_and_make_all_of_your_dreams_come_true_you_shine_brighter_than_the_sun_and_more_radiantly_than_a_diamond_i_could_easily_pick_you_up_in_a_crowd_because_you_re_stunning_and_outstanding_here_s_the_most_heartfelt_wish_for_the_most_incredible_friend_who_never_fails_to_annoy_and_yet_surprise_me_every_time_i_m_wishing_you_the_length_of_years_and_amazing_birthday_happy_birthday_lovely_friend"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="@string/scroll_horizontally"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/hozscrollbar">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="350dp"
+                        android:layout_height="400dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/todo"
+                        app:srcCompat="@drawable/tea" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="350dp"
+                        android:layout_height="400dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/todo"
+                        app:srcCompat="@drawable/coffee" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="350dp"
+                        android:layout_height="400dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/icecream" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="350dp"
+                        android:layout_height="400dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/momos" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="350dp"
+                        android:layout_height="400dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/mango" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="350dp"
+                        android:layout_height="400dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/cholebhature" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="350dp"
+                        android:layout_height="400dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/cake" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/knowtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="@string/let_see_how_much_i_know_about_you"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/gettoknowbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:text="@string/click_here"
+                app:backgroundTint="#FB3333" />
+
+            <TextView
+                android:id="@+id/suggestiontext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="serif-monospace"
+                android:gravity="center_horizontal"
+                android:text="@string/suggest_me_some_changes"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/suggestionbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="184dp"
+                android:text="@string/suggestions_here"
+                app:backgroundTint="#673AB7" />
+
+            <Button
+                android:id="@+id/secure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:text="@string/secret_can_only_be_opened_with_password"
+                app:backgroundTint="#FE2B2B" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Hint1 : It's a 8 or 10 digit number" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/hint2_you_know_that_number" />
+
+            <Button
+                android:id="@+id/anonymous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Something here just Click !" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/bevan"
+                android:gravity="center_horizontal"
+                android:text="Sorry ! for using your pics without your pic but i don't have them saved i'd deleted them ."
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/love_ya_like_a_sister"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Hey there ! Thanks for going through the app . This app is created by @its_shyam640. All rights reserved by @its_shyam640"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

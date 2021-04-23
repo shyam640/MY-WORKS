@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/friends_message_style"
+        android:fontFamily="@font/aladin"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:text=" This is received message"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/emoji"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/message"
+        app:layout_constraintEnd_toEndOf="@+id/message"
+        app:layout_constraintStart_toEndOf="@+id/message"
+        app:layout_constraintTop_toTopOf="@+id/message"
+        app:srcCompat="@drawable/omg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

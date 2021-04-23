@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Birthday</string>
+    <string name="name">Name :</string>
+    <string name="title">title</string>
+    <string name="most_common">Most common</string>
+    <string name="_100">100%</string>
+    <string name="surprise_ahead">Surprise Ahead ...</string>
+    <string name="birthday_in">BirthDay in :</string>
+    <string name="textview">TextView</string>
+    <string name="seconds">Seconds</string>
+    <string name="Name">Name</string>
+    <string name="suggestion">Suggestion</string>
+    <string name="click_here">Click Here</string>
+    <string name="suggestions_here">Suggestions Here</string>
+    <string name="swipe_right_if_true_else_swipe_left">Swipe right if True else swipe left</string>
+    <string name="please_press_back_button">Please Press back Button !</string>
+    <string name="wait_for_song_to_finish_more_things_ahead">Wait for song to finish..More things ahead</string>
+    <string name="happy_birthday">Happy Birthday</string>
+    <string name="heypiyuu">Arundhati(heyPiyuu)</string>
+    <string name="let_see_how_much_i_know_about_you">Let see how much I know about you .</string>
+    <string name="image">image</string>
+    <string name="suggest_me_some_changes">Suggest me some changes !</string>
+    <string name="hi_you_re_privileged_to_experience_another_year_on_earth_and_you_can_only_be_grateful_to_god_for_that_sending_birthday_wishes_your_way_for_a_beautiful_year_ahead_may_your_lucky_stars_continue_to_shine_and_make_all_of_your_dreams_come_true_you_shine_brighter_than_the_sun_and_more_radiantly_than_a_diamond_i_could_easily_pick_you_up_in_a_crowd_because_you_re_stunning_and_outstanding_here_s_the_most_heartfelt_wish_for_the_most_incredible_friend_who_never_fails_to_annoy_and_yet_surprise_me_every_time_i_m_wishing_you_the_length_of_years_and_amazing_birthday_happy_birthday_lovely_friend">Hi , you’re privileged to experience another year on earth, and you can only be grateful to God for that. Sending birthday wishes your way for a beautiful year ahead. May your lucky stars continue to shine and make all of your dreams come true. You shine brighter than the sun and more radiantly than a diamond. I could easily pick you up in a crowd because you’re stunning and outstanding.Here’s the most heartfelt wish for the most incredible friend who never fails to annoy and yet surprise me every time. I’m wishing you the length of years and amazing birthday. Happy birthday lovely and cute friend.</string>
+    <string name="hint1_its_a_phone_number">Hint1 : Its a Phone Number</string>
+    <string name="secret_can_only_be_opened_with_password">Secret can only be opened with password</string>
+    <string name="scroll_horizontally">Scroll Horizontally !</string>
+    <string name="hint2_you_know_that_number">Hint2 : You know that Number .</string>
+    <string name="todo">TODO</string>
+</resources>

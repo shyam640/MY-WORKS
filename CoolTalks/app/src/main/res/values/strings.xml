@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CoolTalks</string>
+    <string name="tap_to_start_chat">Tap to start chat</string>
+    <string name="enter_phone_number_with_country_code_e_g_918279283493">Enter Phone Number with country code e.g. +918279283493</string>
+    <string name="male">Male</string>
+    <string name="Continue">Continue</string>
+    <string name="female">Female</string>
+    <string name="enter_your_email_address_e_g_example_gmail_com">Enter your email address e.g. example@gmail.com</string>
+    <string name="enter_your_email_and_password_to_verify_you">Enter your Email and password to verify you</string>
+    <string name="verify_your_email">Verify your Email</string>
+    <string name="userimage">userimage</string>
+    <string name="verify_your_phone_number">Verify your Phone Number</string>
+    <string name="enter_your_phone_number_to_verify_you">Enter your Phone Number to verify you</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="phone_number">Phone Number</string>
+</resources>

@@ -1,0 +1,3 @@
+THis is some text which will be fetched in way of 
+
+                  double promise then method

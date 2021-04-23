@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.birthday">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/surprise"
+        android:label="Surprise by @its_shyam640"
+        android:roundIcon="@drawable/surprise"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Birthday"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".anonymous">
+
+        </activity>
+        <activity android:name=".confessPage"/>
+        <activity android:name=".secret"/>
+        <activity android:name=".SuggestionPage"/>
+
+        <activity android:name=".BlastActivity">
+
+        </activity>
+        <activity android:name=".GetToKnow" />
+        <activity android:name=".CountDown" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:launchMode="singleTask"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+
+</manifest>

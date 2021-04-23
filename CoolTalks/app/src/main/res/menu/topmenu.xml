@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/newgroup"
+        android:icon="@drawable/group"
+        android:title="New Group" />
+    <item
+        android:id="@+id/qrcode"
+        android:title="QR Code" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="Settings" />
+    <item
+        android:id="@+id/invite"
+        android:icon="@drawable/invite"
+        android:title="Invite Friends" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@android:drawable/sym_contact_card"
+        android:title="Logout" />
+</menu>

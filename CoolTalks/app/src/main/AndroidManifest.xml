@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.cooltalks">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CoolTalks"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".Activities.EmailLogin" android:windowSoftInputMode="stateVisible">
+
+        </activity>
+        <activity android:name=".Activities.StartAnimation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.GroupChatActivity" />
+        <activity android:name=".Activities.MessagePage" />
+        <activity android:name=".Activities.ProfilePage" /> <!-- android:windowSoftInputMode="stateVisible"  :- This tells us about the state of keyboard to be visible or not on app open or user focus . -->
+        <activity
+            android:name=".Activities.ValidatingPage"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".Activities.LoginPage"
+            android:windowSoftInputMode="stateVisible">
+
+        </activity>
+        <activity
+            android:name=".Activities.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

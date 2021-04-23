@@ -76,5 +76,6 @@
       "valarray": "cpp",
       "variant": "cpp"
    },
-   "C_Cpp.errorSquiggles": "Disabled"
+   "C_Cpp.errorSquiggles": "Disabled",
+   "liveServer.settings.multiRootWorkspaceName": "MY_WORKS"
 }
