@@ -29,6 +29,7 @@ console.error("This is an error"); // This will display an error
 
 // Three type of variable declaration : var , let , const
 // In js you don't need to define type of variable it will automatically detect.
+// variable defined with const ,then their value cannot be redefined.
 var Name = `@its_shyam640`; // String variable
 
 // One more thing when declaring string then it is recommended to use backcomma (` `) why??   because it considers string passed to be string even it consist of mix of char and int .
@@ -64,7 +65,7 @@ const fruit = "Apple";
   city = "Kolkata";
   console.log(city); // Kolkata is printed here
 }
-console.log(city); // Same here Kolkata is printed as it is overided
+// console.log(city); // Same here Kolkata is printed as it is overided
 
 const arr = [12, 23, 13, 46, 7]; // Defining array
 // arr.push(67);                                // push function is to push element at end of array
@@ -150,12 +151,12 @@ let strCnvrsn;
 strCnvrsn = String(34); // Integer converted to string
 console.log(strCnvrsn, typeof strCnvrsn); // typeof gives type of variable
 
-let date = String(new Date()); // Date gives the current date and time
-console.log(date.toString()); // Another method to convert integer to string using toString() function
-console.log(date, typeof date);
+let dte = String(new Date()); // Date gives the current date and time
+console.log(dte.toString()); // Another method to convert integer to string using toString() function
+console.log(dte, typeof dte);
 
-let arr = String([1, 2, 3, 4, 5]);
-console.log(arr, length, typeof arr);
+let arr1 = String([1, 2, 3, 4, 5]);
+console.log(arr1, length, typeof arr1);
 
 let stri = Number("3434");
 console.log(stri, typeof stri);
@@ -271,7 +272,7 @@ console.log(html.split(">")); // Splits the string after >
 console.log(html.replace("this", "it")); // replaces the string 'this' with 'it'
 
 // Declaring String in another way
-let g1 = "piyu";
+let g1 = "coding";
 let g2 = "shivam";
 let g3 = "shyam";
 let myhtml = `Hello ${g3} <h1>This is something more</h1><p>${g3} likes ${g1}</p><h3>He has friends like ${g2} and ${g1}</h3>`;
@@ -290,9 +291,9 @@ const Students = ["Shyam", "Ayushi", "Shivam", "Piyu", "Nikhil"];
 const FruitTheyLike = ["Mango", "Grapes", "Apple", "Pineapple"];
 const mixedArray = ["str", 89, [3, 5]];
 
-const arr = new Array(64, 636, 22, "Banana");
-console.log(arr);
-console.log(mixed);
+const arr2 = new Array(64, 636, 22, "Banana");
+console.log(arr2);
+console.log(mixedArray);
 console.log(fruit[0]);
 
 let value = FruitTheyLike.indexOf(22);
@@ -306,7 +307,7 @@ Students.shift(); // pops element from starting
 Students.splice(2, 3); // this function removes element from 2 to 3 i.e. 1 element
 Students.reverse(); // This function reverse array
 let moreFruits = ["BlackGrapes", "Kiwi"];
-FruitTheyLike = FruitTheyLike.concat(moreFruits);
+// FruitTheyLike = FruitTheyLike.concat(moreFruits);
 console.log(FruitTheyLike);
 
 // Creating objects (You will learn more about objects below)
@@ -331,7 +332,6 @@ else if (age === 65)
 else console.log("You are allowed to vote");
 
 // More If Else conditions
-age = "65";
 if (age !== 65)
   // It means value is same but datatype is not same
   console.log("Value is same but type is not same");
@@ -376,14 +376,14 @@ do {
 } while (k < 10);
 
 // array displaying
-let arr = [2, 4, 1, 6, 4, 6];
+let arr3 = [2, 4, 1, 6, 4, 6];
 // Method 1 to display array
-arr.forEach(function (element) {
+arr3.forEach(function (element) {
   console.log(element);
-  console.log(element, index, arr);
+  console.log(element, arr3);
 });
 // Method 2 to display array
-for (let i = 0; i < arr.length(); i++) console.log(arr[i]);
+for (let i = 0; i < arr3.length; i++) console.log(arr3[i]);
 
 // Tip :  always try using object way which is cool and also will help you in most of the programming languages
 let object = {
@@ -392,7 +392,7 @@ let object = {
   type: "Programmer",
   os: "Windows",
 };
-for (let key in boject) console.log(`${key} of objects is ${object[key]}`);
+for (let key in object) console.log(`${key} of objects is ${object[key]}`);
 
 // #################################      Topic 7 : functions in JS    ######################################################################
 
@@ -426,10 +426,10 @@ alert("This is working");
 // or u can write
 // window.alert('This is working');
 
-let z = prompt("This will create a prompt window to store value in variable z");
+let z1 = prompt("This will create a prompt window to store value in variable z");
 // or u can write
 // window.prompt('this is also correct');
-console.log(z);
+console.log(z1);
 
 // I have used same varible to save time but you have to use different variable if u do these operations in single file .
 // These are some old js codes which might not be used now because we now have more advanced css , Bootstrap and SASS .
@@ -457,7 +457,7 @@ b = window.history; // This gives the history of your page
 console.log(b);
 
 // In console if u type
-history(-1); // this will take you one step back .... Inshort it behaves like back and forward button in your webpage .
+// history(-1); // this will take you one step back .... Inshort it behaves like back and forward button in your webpage .
 
 let t = document;
 console.log(t); // this will show all tag in console
@@ -577,7 +577,7 @@ elm2.id = "elem2"; // Adding id to element h4
 elm2.className = "elem2"; // Adding class name to element h4
 let textNode = document.createTextNode("This need to be replaced"); // Adding text to element
 elm2.appendChild(textNode); // This will add text to tag created by elm2
-elm.replaceChild(elm2); // This will replace element elm to elm2
+// elm.replaceChild(elm2,); // This will replace element elm to elm2
 
 let newul = document.getElementById("myid");
 newul.replaceChild(elm, document.getElementById("rplctext"));
@@ -592,7 +592,7 @@ console.log(elm2);
 
 // ########################################      Topic 10 : Event and Event Objects      ######################################################
 
-document.getElementById("evntBtn").addEventListener("click", function (e) {
+document.getElementById('evntBtn').addEventListener("click", function (e) {
   // addEvenetListner is to fire some cases
   // You can understand it more by changing click to mouseover and open console window simultaneously to check something cool.
   console.log(e.target); // This will show if u have clicked at place with id evntBtn
@@ -681,7 +681,7 @@ console.log(car1);
 // Creating objects is useful when doing repeated work
 
 // Creating object using literals
-let obj = {
+let obj1 = {
   name: "its_shyam640",
   type: "student",
   work: "coder",
@@ -762,7 +762,7 @@ console.log(ayushi);
 //#####################################    Topic 14 : ES6 and classes and Inheritance    #######################################
 
 // Creating object using class
-class Employee {
+class Employee1 {
   constructor(givenName, givenExperience, givenDivision) {
     this.name = givenName;
     this.experience = givenExperience;
@@ -779,13 +779,13 @@ class Employee {
   }
 }
 
-clsObj = new Employee("its_shyam640", 1, "cs"); // creating object
+clsObj = new Employee1("its_shyam640", 1, "cs"); // creating object
 console.log(clsObj);
 console.log(clsObj.joiningYear());
-console.log(Employee.add(33, 5)); // Calling static functions is done directly we don't need object
+console.log(Employee1.add(33, 5)); // Calling static functions is done directly we don't need object
 
 // showing Inheritance to create new object
-class Programmers extends Employee {
+class Programmers extends Employee1 {
   constructor(giveName, givenExperience, givenDivision, github) {
     super(givenName, givenExperience, givenDivision);
     this.Language = lang;
@@ -1020,23 +1020,23 @@ const func = function () {
 func();
 
 // Creating a arrow function
-const func = () => {
+const func5 = () => {
   console.log("This is second method of calling function !");
 };
-console.log(func());
+console.log(func5());
 
 // writing arrow function in another way
-const func = () =>
+const func6 = () =>
   "This statement is returned ! we do not need braces in one line return function . ";
-console.log(func());
+console.log(func6());
 
 // if single argument is passed to function then we can write it as :
-const func = (greeting) => "Good morning " + greeting;
-console.log(func("Sir"));
+const func7 = (greeting) => "Good morning " + greeting;
+console.log(func7("Sir"));
 
 // if more then one argument is passed to function then we can write it as :
-const func = (greeting, salutation) => "Good morning " + greeting + salutation; // if bracket not used then we
-console.log(func("Mr.", "Sir")); // will get an error
+const func8 = (greeting, salutation) => "Good morning " + greeting + salutation; // if bracket not used then we
+console.log(func8("Mr.", "Sir")); // will get an error
 
 
 
@@ -1110,10 +1110,10 @@ async function temp(){
    return users;
 }
 console.log("Before calling function");
-let a = temp();
+let a1 = temp();
 console.log("After calling function");
-console.log(a);
-a.then(data => console.log(data));
+console.log(a1);
+a1.then(data => console.log(data));
 console.log("This is end line which is printed before");
 
 // OUTPUT of above
@@ -1136,11 +1136,11 @@ console.log("This is end line which is printed before");
 // when we did some mistake in code then we can use try catch or if we something to be executed when we don't know if
 // its true or false then also we use try catch 
 
-let a = false;
-if(!a){
+let a2 = false;
+if(!a2){
    throw new Error("This program will not execute further");
 }else{
-   console.log(a);
+   console.log(a2);
 }
 
 try{
@@ -1254,7 +1254,7 @@ const sometempJSON = `{
    "price": "$59,395"
  }`;
 
- const obj = JSON.parse(sometempJSON);
+ const obj3 = JSON.parse(sometempJSON);
  let printbtn = document.getElementById('print-data-btn');
 printbtn.addEventListener('click',()=>{
       let results = sometempJSON['images'];
@@ -1266,8 +1266,201 @@ printbtn.addEventListener('click',()=>{
       mylist.innerHTML = html;
  });
 
-//##############################    Topic 18 : Usage of Objects in JavaScript     ##################################
 
+//###################################    Topic 19 :Introduction to Regular Expression     #####################################
+
+// Searching for  characters and string in smart way in js is done by Regular Expression .
+// Regular Expression is written between two forward slashes /Regular Expression/
+
+let regular = / this is some regular expression text/;
+console.log(regular);
+console.log(regular.source);
+
+let str = "This is an string to check all the functions of regular expression and try them on this and hopefully it will cover all concepts and would make you learn too.";
+
+// Functions in regular expression
+// 1. exec() => This function returns the index of occurence of the regular expression in string or something else returns null.
+
+let reg = /all/;
+console.log(reg.exec(str));   // prints index 6
+console.log(reg.exec(str));       // Prints index 6 again
+console.log(reg.exec(str).input);       // Prints string str
+console.log(reg.exec(str).index);       // Prints index 6 
+
+reg = /all/g;                  // Here g stands for global . This means search in full string
+console.log(reg.exec(str));       // prints index 6
+console.log(reg.exec(str));       // Prints index 22
+console.log(reg.exec(str));       // Prints null as no more 'all' are present in string
+
+
+let reg1 = /All/i;                 // Here i stands for case insensitive
+console.log(reg1.exec(str));         // returns null as 'All' is not present
+
+
+// 2. test() => returns true if present else returns false .
+console.log(reg.test(str));
+
+
+// 3. match() => returns array of matches found 
+// console.log(reg.match(str));          // This is wrong
+console.log(str.match(reg));       // this is right    and return array of mathches means two 'all'
+
+
+// 4. search() => returns index of first occurence else returns -1
+// console.log(reg.search(str));          // This is wrong
+console.log(str.search(reg));       // this is right    and return array of mathches means two 'all'
+
+
+// 5. replace() => returns string after replacing all words of occurence with other word .
+console.log(str.replace(reg,"ALL"));
+
+
+// Metacharacters in regex expression
+let stringStr = ".This is shyam sundar and this string is written by shyam in order to explain regex metacharacters";
+
+let reg2 = /^th/;            // This means that word start with 'shy'
+console.log(reg2.exec(stringStr));       // returns index of string starting with regex expression reg2
+
+reg2 = /is$/;       // This means that string end with 'is'
+console.log(reg2.exec(stringStr));          // returns index of string ending with regex expression reg2
+
+reg2 = /th.er/;          // This means match any of the character
+console.log(reg2.exec(stringStr));     // returns index if any of the character matches in the string
+
+reg2 = /th*er/;         // This means zero or more characters are matched.
+console.log(reg2.exec(stringStr));         // returns index if zero or more character matches.
+
+reg2 = /th?er?in?ex/;   // This means 'h' 'r' 'n' are optional so matches for 't' 'e' 'i' 'e' 'x' compulsory but 'h' 'r' 'n' are optional.
+console.log(reg2.exec(stringStr));     // returns index of character matched
+
+
+// Character sets in regex expression
+let stringStr1 = "This is shyam sundar and this string is written by shyam in order to explain regex character sets."
+
+let reg3 = /sh[azy]am/;             // if after 'sh' if any of a,z,y is present then gives regex expression is present
+console.log(reg3.exec(stringStr1));
+
+reg3 = /sh[a-z]am/;        // if after 'sh' if any of character from a to z is present then gives regex expression is present 
+console.log(reg3.exec(stringStr1));
+
+reg3 = /sh[^azy]am/;             // if after 'sh' if any of a,z,y is not present then gives regex expression is present
+console.log(reg3.exec(stringStr1));
+
+reg3 = /s[^1-9]h[a-z]a[a-zA-Z]/;                // Multiple character sets
+console.log(reg3.exec(stringStr1));
+
+// Quantifiers
+reg3 = /sh{0,3}yam/;       // if 'h' comes 0 to 3 times then regex expression is present
+console.log(reg3.exec(stringStr1));
+
+let strng = "this is shyshy match would be found it is written by its_shyam640";
+reg3 = /(shy){2}/;        // shy group should come two times
+console.log(reg3.test(strng));
+
+
+// Shorthand character classes
+reg3 = /\wld/;        // Word character - _ or alphabets or numbers
+console.log(reg3.exec(strng));
+
+reg3 = /\d640/;         // digit character
+console.log(reg3.exec(strng));
+
+reg3 = /\D640/;         // digit character with no preceding digit but can be alphabet
+console.log(reg3.exec(strng));
+
+
+// ALl common character classes are written below:
+// Character classes
+let regex = /\war/;     //word character - _ or alphabet or numbers
+regex = /\w+d1r/;       // \w+ means one or more word characters
+regex = /\Wbhai/;       // Non word character
+regex = /\W+bhai/;      // \W+ means more than one Non word character
+regex = /number \d999/; // \d means digit
+regex = /number \d+/;   // \d+ means more than one digit
+regex = /\D999/;        // \D means non digit
+regex = /\D+999/;       // \D+ means more than one non digit
+regex = /\ska number/;  // Match whitespace character
+regex = /\s+ka number/; // \s+ means match one or more than one whitespace characters
+regex = /\Ska number/;  // Match non whitespace character
+regex = /\S+ka number/; // Match one or more than one non whitespace character
+regex = /4r5r\b/;  // word boundary
+
+
+// Assertions
+regex = /h(?=y)/;
+regex = /h(?!y)/;
+
+
+
+//################################    Topic 20 : Iterators and Generators in JavaScript     ###################################
+
+// Iterator
+function myIterable() {
+  let counter = 0;
+  return {
+    next: function () {
+      if (counter < 5) {
+        counter++;
+        return { done: false, value: counter };
+      } else {
+        return { done: true, value: undefined };
+      }
+    },
+  };
+}
+
+// Generator
+function* myGenerator() {
+  yield 1;
+  yield 2;
+}
+let iterator = myGenerator();
+let result;
+do { 
+result = iterator.next();
+console.log(result);
+} while (!result.done);
+
+
+//#########################################    Topic 21 : Sets and Maps in JavaScript     ########################################
+
+// Set stores unique values
+const mySet = new Set();  // Initialize an empty set
+console.log('The set looks like :',mySet);
+
+// Adding values to this set
+mySet.add('this');
+mySet.add('My name');
+mySet.add('this');
+mySet.add('that');
+mySet.add(34);
+mySet.add(true);
+mySet.add(false);
+mySet.add('that2');
+console.log('The set looks like this now:',mySet);
+
+// Use a constructor to initialize the set
+let mySet2 = new Set([1, 45, 'this', false, {a:4, b:8}, 'this']);
+console.log('New set:',mySet2);
+
+
+console.log(mySet.size); // Get the size of the set
+
+console.log(mySet.has(346)); // Check whether set has 346 or not
+
+console.log('Before removal', mySet.has('that2'));
+mySet.delete('that2'); // Remove an element from the set
+console.log('After removal', mySet.has('that2'));
+
+
+// Iterating a set
+// for(let item of mySet){
+//     console.log('Item is  :', item );
+// }
+
+mySet.forEach((item)=>{
+    console.log('Item is  :', item );
+});
 
 
 
